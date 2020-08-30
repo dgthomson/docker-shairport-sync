@@ -13,7 +13,7 @@ RUN apk -U add \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
-        libmosquitto-dev \
+        mosquitto-dev \
     && cd /root \
     && git clone https://github.com/mikebrady/shairport-sync.git \
     && cd shairport-sync \
@@ -42,7 +42,7 @@ RUN apk -U add \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
-        libmosquitto-dev \
+        mosquitto-dev \
     && apk add \
         dbus \
         alsa-lib \
