@@ -13,6 +13,7 @@ RUN apk -U add \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
+        libmosquitto-dev \
     && cd /root \
     && git clone https://github.com/mikebrady/shairport-sync.git \
     && cd shairport-sync \
@@ -24,6 +25,7 @@ RUN apk -U add \
         --with-ssl=openssl \
         --with-soxr \
         --with-metadata \
+        --with-mqtt-client \
     && make \
     && make install \
     && cd / \
