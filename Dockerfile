@@ -14,6 +14,9 @@ RUN apk -U add \
         avahi-dev \
         libconfig-dev \
         mosquitto-dev \
+        libsndfile-dev \
+        soxr-dev \
+        xmltoman \
     && cd /root \
     && git clone https://github.com/mikebrady/shairport-sync.git \
     && cd shairport-sync \
