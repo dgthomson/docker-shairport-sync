@@ -1,4 +1,4 @@
-FROM alpine:3.9.4
+FROM alpine:latest
 
 RUN apk -U add \
         git \
@@ -51,6 +51,7 @@ RUN apk -U add \
         soxr \
         avahi \
         libconfig \
+        mosquitto \
     && rm -rf \
         /etc/ssl \
         /var/cache/apk/* \
