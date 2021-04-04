@@ -42,6 +42,7 @@ RUN apk -U add \
         soxr-dev \
         avahi-dev \
         libconfig-dev \
+        mosquitto-dev \
     && apk add \
         dbus \
         alsa-lib \
